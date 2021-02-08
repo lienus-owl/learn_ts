@@ -15,10 +15,19 @@
   <a href="#">штуки дрюки</a>
 </div>
 
+<div id="myRightScreen" class="overlay">
+  <button class="btn button-no-borders" (click)="closeClicked()">
+    <span class="fa fa-chevron-left"></span>
+  </button>
+  <div class="overlay-content">
+    <p>еще какой то контент</p>
+  </div>
+</div>
+
 <div id="main" class="main-content-panel">
   <div class="row">
     <div class="col-sm-1">
-      <button><span class="fa fa-chevron-left"></span></button>
+      <button (click)="showHideSideClicked()"><span class="fa fa-chevron-left"></span></button>
     </div>
     <div class="col-sm-11">
       <div class="row-content-header">
@@ -32,3 +41,4 @@
     </div>
   </div>
 </div>
+
