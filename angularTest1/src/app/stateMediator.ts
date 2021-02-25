@@ -1,4 +1,19 @@
-import { toUnicode } from "punycode";
+export class Mediator {
+    private _mainPanelState = new MainPanelOnly();
+    private _detailPanelState = new DetailPanel();
+    private _sideNavState = new MainPanelWithSideNav();
+
+    private _currentState: IState;
+    private _detailPanelState: IState;
+    private _mainPanelState: IMediatorImpl;
+
+    constructor(mediatorImpl: IMediatorImpl) {
+        this._mediatorImpl = mediatorImpl;
+        this._currentState = this._currentMainPanelState = this._sideNavState;
+    }
+
+    
+}
 
 export enum StateType {
     MainPanelOnly,
@@ -71,3 +86,16 @@ export interfase IMediatorImpl {
     changeShowHideSiteButton(fromClass: string, toClass: string);
 }
 
+
+getStateImpl(stateType: StateType): IState {
+    var stateImpl: IState;
+    switch(StateType) {
+        case StateType.DetailPanel: stateImpl = this._detailPanelState;
+            break;
+        case StateType.MainPanelOnly: stateImpl = this._mainPanelOnly;
+            break;
+        case StateType.MainPanelWithSideNav: stateImpl = this._sideNavState;
+            break;
+    }
+    return stateImpl;
+}
