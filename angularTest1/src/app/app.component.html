@@ -8,7 +8,7 @@
 <div id="main" class="main-content-panel">
   <div class="row">
     <div class="col-sm-1">
-      <button (click)="showHideSideClicked()"><span class="fa fa-chevron-left"></span></button>
+      <button (click)="showHideSideClicked()"><span id="show-hide-side-button" class="fa fa-chevron-left"></span></button>
     </div>
     <div class="col-sm-11">
       <div class="row-content-header">
@@ -16,8 +16,8 @@
       </div>
     </div>
     <div class="main-content">
-      <button class="btn btn-primary">
-        detail
+      <button class="btn btn-primary" (click)="buttonClickedDetail()">
+        кнопочка
       </button>
     </div>
   </div>

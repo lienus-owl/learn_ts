@@ -13,7 +13,7 @@ export class RightscreenComponent{
     this.notify.emit('Клик из вложенного компонента');
   }
 
-  closeRigthWindow() {
+  closeRightWindow() {
     document.getElementById('myRightScreen')?.style.transform === "translateX(100%)";
   }
 
