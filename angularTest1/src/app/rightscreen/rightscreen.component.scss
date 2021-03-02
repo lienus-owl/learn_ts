@@ -1,0 +1,12 @@
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 55px;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    border-left: 1px solid #ea6671;
+    transition: .3s;
+    z-index: 10;
+  }
