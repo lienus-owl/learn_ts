@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-page">
+        <div class="questions-block">
+            <h1>Вопросики на Frontend Developer</h1>
+            <a href="1.html">General Questions</a>
+            <a href="2.html">HTML Questions</a>
+            <a href="3.html">CSS Questions</a>
+            <a href="4.html">JS Questions</a>
+            <a href="5.html">Accessibility Questions (external link)</a>
+            <a href="6.html">Testing Questions</a>
+            <a href="7.html">Performance Questions</a>
+            <a href="8.html">Network Questions</a>
+            <a href="9.html">Coding Questions</a>
+            <a href="10.html">Fun Questions</a>
+        </div>
+        <div class="accordionWrapper">
+            <div class="accordionItem open">
+                <h2 class="accordionItemHeading">Question: What is the value of foo?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        var foo = 10 + '20';
+                    </pre>
+                </div>
+            </div>
+            
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What will be the output of the code below?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        console.log(0.1 + 0.2 == 0.3);
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: How would you make this work?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        add(2, 5); // 7
+                        add(2)(5); // 7
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What value is returned from the following statement?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        "i'm a lasagna hog".split("").reverse().join("");
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What is the value of window.foo?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        ( window.foo || ( window.foo = "bar" ) );
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What is the outcome of the two alerts below?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        var foo = "Hello";
+                        (function() {
+                        var bar = " World";
+                        alert(foo + bar);
+                        })();
+                        alert(foo + bar);
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What is the value of foo.length?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        var foo = [];
+                        foo.push(1);
+                        foo.push(2);
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What is the value of foo.x?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        var foo = {n: 1};
+                        var bar = foo;
+                        foo.x = foo = {n: 2};
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What does the following code print?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        console.log('one');
+                        setTimeout(function() {
+                        console.log('two');
+                        }, 0);
+                        Promise.resolve().then(function() {
+                        console.log('three');
+                        })
+                        console.log('four');
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What is the difference between these four promises?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        doSomething().then(function () {
+                            return doSomethingElse();
+                        });
+                        
+                        doSomething().then(function () {
+                            doSomethingElse();
+                        });
+                        
+                        doSomething().then(doSomethingElse());
+                        
+                        doSomething().then(doSomethingElse);
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: What will the code below output to the console and why?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        (function(){
+                            var a = b = 3;
+                        })();
+                        
+                        console.log("a defined? " + (typeof a !== 'undefined'));
+                        console.log("b defined? " + (typeof b !== 'undefined'));
+                    </pre>
+                </div>
+            </div>
+            
+            
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Question: Consider the two functions below. Will they both return the same thing? Why or why not?</h2>
+                <div class="accordionItemContent">
+                    <pre>
+                        function foo1()
+                        {
+                        return {
+                            bar: "hello"
+                        };
+                        }
+
+                        function foo2()
+                        {
+                        return
+                        {
+                            bar: "hello"
+                        };
+                        }
+                    </pre>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
