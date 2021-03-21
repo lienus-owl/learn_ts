@@ -23,87 +23,104 @@
         </div>
         <div class="accordionWrapper">
             <div class="accordionItem open">
-                <h2 class="accordionItemHeading">What did you learn yesterday/this week?</h2>
-                <div class="accordionItemContent">
-                    <p></p>
-                </div>
-            </div>
-            
-            
-            <div class="accordionItem close">
                 <h2 class="accordionItemHeading">What excites or interests you about coding?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>в данный момент углубиться в изучение frontend разработки, и частично в backend</p>
                 </div>
             </div>
+            
+            
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">What is a recent technical challenge you experienced and how did you solve it?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>нужно было сделать для вебсервисов мобильное меню, для  этого использовал только css и js, 
+                        на основе уже существующих элементов на странице сформировал новое отображение, 
+                        + добавил кнопку по клику на которую показывали бы с анимацией это меню</p>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">When building a new web site or maintaining one, can you explain some techniques you have used to increase performance?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <pre>
+                        - сжимаем картинки, используем более легковестные форматы для контента на страницу webp а не jpg/png, где возможно используем svg
+                        - вырезаем все ненужные скрипты и библиотеки которые можно реализовать просто на JS
+                        - минифицируем код
+                        - используем сборщики 
+                        - распределяем подключение нужных частей кода только там где оно используется
+                    </pre>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">Can you describe some SEO best practices or techniques you have used lately?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <pre>
+                        - настраиваем robots.txt для правильной индексации сайта
+                        - в sitemap.xml настраиваем план карту сайта, 
+                        желательно вообще сделать автогенерацию файла, чтобы при изменении структуры карта сайта обновлялась тоже, 
+                        в нем мы указываем поисковым страницам вес страницы, чтобы поисковые системы правильно понимали наши проиоритеты
+                        - настраиваем всё что касается форматирования html, возможно это называется иначе - от соблюдения правил:
+                            * что должен быть 1 h1 на странице до
+                            * для картинок указываем атрибут alt=""
+                            * title, description, keywords и мета описания для социальных сетей
+                            * если требуется скрыть передачу веса сайта на другие русурсы то экранируем внешие ссылки через тег noindex с атрибутом nofollow
+                            * избегаем создания дублей страницам частично можно решить правилами переадресации в .htaccess
+                            * скрипты и стили выносим в отдельные файлы
+                            * для несуществующих страниц должна быть 404
+                            * по возможности делаем url страниц человекопонятными-читаемыми (ЧПУ)
+                    </pre>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">Can you explain any common techniques or recent issues solved in regards to front-end security?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>-</p>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">What actions have you personally taken on recent projects to increase maintainability of your code?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>периодический рефайторинг</p>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">Talk about your preferred development environment.</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>на бэкенде laravel на фронте vuц + автосборка, макеты в figma</p>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">Which version control systems are you familiar with?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>git, работал по методологии git-flow</p>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">Can you describe your workflow when you create a web page?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>бэкенд -> верстка -> функционал и анимации</p>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">If you have 5 different stylesheets, how would you best integrate them into the site?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>если там нет дублирования стилей так как они разные по условию, и все используются раз их надо подключать, то можно выделить один главный файл, а остальные имортировать в него к примеру.</p>
+                    <p>либо придется выявлять дубли, переписывать и проверять, что получилось в итоге</p>
                 </div>
             </div>
             
             <div class="accordionItem close">
                 <h2 class="accordionItemHeading">Can you describe the difference between progressive enhancement and graceful degradation?</h2>
                 <div class="accordionItemContent">
-                    <p></p>
+                    <p>-</p>
                 </div>
             </div>
             
@@ -219,6 +236,12 @@
                 </div>
             </div>
 
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">What did you learn yesterday/this week?</h2>
+                <div class="accordionItemContent">
+                    <p></p>
+                </div>
+            </div>
             
         </div>
     </div>
